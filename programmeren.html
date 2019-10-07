@@ -6,13 +6,33 @@
         <script>
             function naamvaneenfunctie(){
                 alert("hoppa");
+                var student1voornaam = "Johan";
+                var student1leeftijd = 25;
+                voorstellen(student1voornaam, student1leeftijd);            
             }
+            function voorstellen(voornaam, leeftijd){
+
+                alert("Hallo, ik ben "+voornaam+ " en ik ben "+leeftijd+" jaar oud")
+            }
+            function viaeenobject(){
+                var student1 = {};
+                student1.voornaam = "fred";
+                student1.leeftijd = 45;
+                voorstellenViaObject(student1);
+            }
+            function voorstellenViaObject(student){
+                alert("Hallo, I am "+ student.voornaam + "and I am "+student.leeftijd + " years old");
+            }
+
+
+                
         </script>
     </head>
     <body>
         <p>
             Zet hier maar wat tekst neer, en nog iets blablabla
         </p>
-        <input type="button" value="klik maar" onclick="naamvaneenfunctie()">      
+        <input type="button" value="klik maar" onclick="naamvaneenfunctie()">  
+        <input type="button" value="klik maar" onclick="viaeenobject()">  
     </body>
 </html>
